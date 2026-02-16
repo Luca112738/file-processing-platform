@@ -1,4 +1,5 @@
 from fastapi import APIRouter, UploadFile, File, HTTPException
+from app.services.file_service import process_csv
 import os
 import shutil
 
@@ -32,11 +33,16 @@ async def upload_file(file: UploadFile = File(...)):
         raise HTTPException(status_code=400, detail="File already exists")
 
     # salvar arquivo
+    # salvar arquivo
     with open(file_path, "wb") as buffer:
         buffer.write(content)
 
+# processar csv
+    result = process_csv(file_path)
+
     return {
-        "filename": safe_name,
-        "size": len(content),
-        "status": "uploaded successfully"
+        "filename": file.filename,
+        "status": "uploaded",
+        "data": result
     }
+
