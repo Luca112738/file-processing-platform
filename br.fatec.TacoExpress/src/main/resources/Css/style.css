@@ -1,0 +1,65 @@
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: #F8EBD8;
+}
+
+.titulo {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #8B2E00;
+}
+
+.subtitulo {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.campo {
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-pref-height: 45;
+    -fx-font-size: 14;
+}
+
+.botao-principal {
+    -fx-background-color: #D35400;
+    -fx-text-fill: white;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20;
+    -fx-pref-height: 45;
+}
+
+.botao-principal:hover {
+    -fx-background-color: #B94700;
+}
+
+.botao-secundario {
+    -fx-background-color: transparent;
+    -fx-text-fill: #D35400;
+    -fx-font-weight: bold;
+}
+
+.card-produto {
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-padding: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0, 0, 2);
+}
+
+.categoria {
+    -fx-background-radius: 15;
+    -fx-background-color: white;
+}
+
+.menu-inferior {
+    -fx-background-color: white;
+    -fx-padding: 15;
+    -fx-spacing: 40;
+}
+
+.preco {
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-text-fill: #D35400;
+}

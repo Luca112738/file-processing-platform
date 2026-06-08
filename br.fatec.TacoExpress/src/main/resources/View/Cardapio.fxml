@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="334.0" prefWidth="411.0" stylesheets="@../Css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CardapioController">
+
+    <top>
+        <VBox spacing="15" style="-fx-padding:20">
+
+    <Label styleClass="titulo" text="Cardápio" />
+
+    <HBox spacing="10">
+
+        <Button fx:id="btnTodos" styleClass="categoria" text="Todos" />
+
+        <Button fx:id="btnTacos" styleClass="categoria" text="Tacos" />
+
+        <Button fx:id="btnBurritos" styleClass="categoria" text="Burritos" />
+
+        <Button fx:id="btnQuesadillas" styleClass="categoria" text="Quesadillas" />
+
+    </HBox>
+</VBox>
+    </top>
+
+    <center>
+
+        <ScrollPane fitToWidth="true">
+
+            <VBox fx:id="containerProdutos" spacing="10" />
+
+        </ScrollPane>
+
+    </center>
+
+    <bottom>
+
+        <HBox alignment="CENTER" styleClass="menu-inferior">
+
+    <Button text="🏠" />
+
+    <Button text="🛒" />
+
+    <Button text="⚙" />
+
+</HBox>
+
+    </bottom>
+
+</BorderPane>
